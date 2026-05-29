@@ -1,0 +1,39 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Train ViT CIFAR-10",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/train.py",
+            "console": "integratedTerminal",
+            "args": [
+                "--dataset",
+                "cifar10",
+                "--epochs",
+                "10",
+                "--batch-size",
+                "128",
+                "--num-workers",
+                "4"
+            ]
+        },
+        {
+            "name": "Train ViT CIFAR-100",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/train.py",
+            "console": "integratedTerminal",
+            "args": [
+                "--dataset",
+                "cifar100",
+                "--epochs",
+                "10",
+                "--batch-size",
+                "128",
+                "--num-workers",
+                "4"
+            ]
+        }
+    ]
+}
