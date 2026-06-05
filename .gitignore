@@ -1,8 +1,29 @@
+# Python cache
 __pycache__/
-*.pyc
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Local Python environments
 .venv/
 venv/
+.env
+
+# IDE / local machine state
+.idea/
+
+# Datasets and generated training artifacts
 data/
 runs/
+runs_smoke/
 outputs/preprocessed_cifar100/
+
+# Model checkpoints and large binary artifacts
 *.pth
+*.pt
+*.ckpt
+*.npz
+*.tar.gz
+
+# Logs
+*.log

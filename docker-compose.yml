@@ -1,0 +1,20 @@
+services:
+  cifar100-trainer:
+    build:
+      context: .
+    image: cifar100-vit-tony:latest
+    working_dir: /app
+    volumes:
+      - ./data:/app/data
+      - ./runs:/app/runs
+    command:
+      - python
+      - train_cifar100_multi_models.py
+      - --model_name
+      - vit_tony
+      - --epochs
+      - "1"
+      - --batch_size
+      - "128"
+      - --num_workers
+      - "0"

@@ -2,6 +2,37 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Train CIFAR-100 Multi Models",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/train_cifar100_multi_models.py",
+            "console": "integratedTerminal",
+            "args": [
+                "--train_all",
+                "--epochs",
+                "50",
+                "--batch_size",
+                "128",
+                "--num_workers",
+                "2"
+            ]
+        },
+        {
+            "name": "Train ViT-Tony CIFAR-100",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/train_vit_tony_cifar100.py",
+            "console": "integratedTerminal",
+            "args": [
+                "--epochs",
+                "50",
+                "--batch-size",
+                "128",
+                "--num-workers",
+                "2"
+            ]
+        },
+        {
             "name": "Train ViT CIFAR-10",
             "type": "python",
             "request": "launch",
